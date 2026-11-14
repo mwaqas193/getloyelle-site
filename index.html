@@ -11,11 +11,21 @@
   <meta property="og:url" content="https://getloyelle.com/">
   <meta property="og:title" content="Loyelle: Loyalty &amp; Rewards for Shopify">
   <meta property="og:description" content="Points, referrals and VIP tiers. Every feature on every plan, on a ledger that is correct to the cent.">
+  <meta property="og:site_name" content="Loyelle">
+  <meta property="og:image" content="https://getloyelle.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Loyelle: loyalty and rewards for Shopify. Every feature on every plan.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Loyelle: Loyalty &amp; Rewards for Shopify">
+  <meta name="twitter:description" content="Points, referrals and VIP tiers. Every feature on every plan, on a ledger that is correct to the cent.">
+  <meta name="twitter:image" content="https://getloyelle.com/img/og.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json" id="structured-data">[{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Loyelle", "url": "https://getloyelle.com/", "applicationCategory": "BusinessApplication", "operatingSystem": "Shopify", "description": "Loyalty points, referrals and VIP tiers for Shopify stores, with every feature on every plan.", "offers": [{"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD", "description": "Up to 200 orders a month"}, {"@type": "Offer", "name": "Essential", "price": "15", "priceCurrency": "USD", "description": "Up to 500 orders a month"}, {"@type": "Offer", "name": "Standard", "price": "79", "priceCurrency": "USD", "description": "Up to 1,000 orders a month"}, {"@type": "Offer", "name": "Plus", "price": "199", "priceCurrency": "USD", "description": "Up to 2,500 orders a month"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the free plan really the full product?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The free plan has the same features as the paid plans, including VIP tiers, referrals, analytics, the API and webhooks. Plans differ by monthly order volume, branding removal and the kind of support you get."}}, {"@type": "Question", "name": "Can I move from another loyalty app?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Loyelle imports customers, point balances and tiers by CSV, with ready-made mappings for Smile, Yotpo and LoyaltyLion exports. You can also export everything from Loyelle at any time."}}, {"@type": "Question", "name": "What happens to points when an order is refunded?", "acceptedAnswer": {"@type": "Answer", "text": "Loyelle removes the points that order earned, valued at the rate that applied when they were awarded. Partial refunds remove a proportional share."}}, {"@type": "Question", "name": "Will it slow down my storefront?", "acceptedAnswer": {"@type": "Answer", "text": "The launcher is a few kilobytes and the rewards panel loads only when a customer opens it. The storefront widget makes no third-party tracking requests."}}, {"@type": "Question", "name": "Does it work with Shopify POS and the new customer accounts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Customers can earn and redeem in store with Shopify POS, at checkout, and inside customer accounts through a dedicated loyalty page."}}, {"@type": "Question", "name": "How are monthly orders counted?", "acceptedAnswer": {"@type": "Answer", "text": "Loyelle counts orders placed in the calendar month that have a customer email, because those are the orders that can earn points. Orders from guests with no email do not count toward your plan."}}, {"@type": "Question", "name": "What happens if I go over my plan's orders?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing breaks. Orders keep syncing and customers keep their balances and can still redeem. New earning pauses until you upgrade or the month resets. On Plus, extra orders are billed at $20 per 100."}}, {"@type": "Question", "name": "What currency am I billed in?", "acceptedAnswer": {"@type": "Answer", "text": "Plans are priced in US dollars and charged every 30 days on your Shopify bill."}}, {"@type": "Question", "name": "How is customer data handled?", "acceptedAnswer": {"@type": "Answer", "text": "Loyelle stores only what the program needs, keeps each store's data separate, and honours Shopify's data request and erasure webhooks."}}]}]</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,7 +47,7 @@
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
         <a href="https://app.getloyelle.com">Log in</a>
-        <a class="button button-primary button-small" href="mailto:hello@getloyelle.com?subject=Loyelle%20early%20access">Get early access</a>
+        <a class="button button-primary button-small" href="#early-access">Get early access</a>
       </nav>
     </div>
   </header>
@@ -50,10 +60,11 @@
           <h1>Loyalty that adds up. <em>To the cent.</em></h1>
           <p class="lede">Turn first orders into second orders. Loyelle gives your Shopify store points, referrals and VIP tiers that bring customers back, on numbers your finance team can trust. Every feature is included on every plan.</p>
           <div class="cta-row">
-            <a class="button button-primary" href="mailto:hello@getloyelle.com?subject=Loyelle%20early%20access">Get early access</a>
+            <a class="button button-primary" href="#early-access">Get early access</a>
             <a class="button button-ghost" href="#compare">Compare plans</a>
           </div>
-          <p class="cta-note">Free plan with no card needed. Paid plans are billed through Shopify.</p>
+          <p class="cta-note">Takes a minute. Free plan with no card needed.</p>
+          <p class="hero-saving"><strong>From $0, not $199 a month.</strong> VIP tiers, checkout redemption and analytics are included in the free plan.</p>
           <ul class="hero-points">
             <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Free up to 200 orders a month</li>
             <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>No feature locked behind a higher plan</li>
@@ -126,6 +137,10 @@
           <li><figure><div class="phone"><img src="img/panel-redeem.png" width="430" height="640" loading="lazy" alt="Ways to redeem screen listing $5 off, free shipping and $25 off with the points each one costs"></div><figcaption><strong>3. Rewards within reach</strong>Customers see what they can claim now and how far the next reward is.</figcaption></figure></li>
           <li><figure><div class="phone"><img src="img/panel-code.png" width="430" height="640" loading="lazy" alt="Reward screen showing a discount code ready to use with an Apply to cart button"></div><figcaption><strong>4. One tap to use it</strong>The code is applied to the cart, so nothing is copied or mistyped.</figcaption></figure></li>
         </ol>
+        <div class="inline-cta">
+          <p><strong>Want this on your store?</strong> It takes an afternoon to set up, and the free plan has every feature.</p>
+          <div class="inline-cta-actions"><a class="button button-primary" href="#early-access">Get early access</a></div>
+        </div>
       </div>
     </section>
 
@@ -183,6 +198,10 @@
           </table>
         </div>
         <p class="pricing-note">Smile details are taken from the public pricing page at smile.io/pricing as read on 14 November 2026 and may have changed since. Loyelle is not affiliated with Smile.</p>
+        <div class="inline-cta">
+          <p><strong>Paying for a higher plan just to unlock one feature?</strong> See what the same store would pay here.</p>
+          <div class="inline-cta-actions"><a class="button button-primary" href="#pricing">See your price</a><a class="button button-ghost" href="#early-access">Get early access</a></div>
+        </div>
       </div>
     </section>
 
@@ -336,13 +355,14 @@
           <h2>Pay for volume. Never for features.</h2>
           <p class="section-sub">Every plan includes every feature. Plans are billed every 30 days through Shopify, and paid plans start with a 14-day free trial.</p>
         </div>
-        <div class="plan-finder">
+        <div class="plan-finder" data-compare-name="Smile" data-compare-price="199" data-compare-orders="2500" data-compare-overage="20">
           <label for="orders-input">How many orders do you get a month?</label>
           <div class="finder-controls">
             <input id="orders-range" type="range" min="0" max="6000" step="50" value="400" aria-label="Monthly orders">
             <input id="orders-input" type="number" min="0" max="100000" step="50" value="400" inputmode="numeric">
           </div>
           <p class="finder-result" id="finder-result" aria-live="polite"></p>
+          <p class="finder-saving" id="finder-saving" hidden></p>
         </div>
         <div class="pricing-grid">
           <article class="plan" data-plan="free" data-price="0" data-orders="200">
@@ -374,6 +394,12 @@
             <ul><li>Every Loyelle feature</li><li>Remove Loyelle branding</li><li>Dedicated onboarding</li></ul>
           </article>
         </div>
+        <ul class="assurances">
+          <li>No card needed for the free plan</li>
+          <li>14-day free trial on paid plans</li>
+          <li>Leave any time by uninstalling</li>
+          <li>Export your data whenever you like</li>
+        </ul>
         <p class="pricing-note">Prices in USD. If you pass the order limit on a capped plan, orders keep syncing and earning pauses until you upgrade or the month resets.</p>
       </div>
     </section>
@@ -425,12 +451,56 @@
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="container cta-inner">
-        <h2>Give your customers a reason to come back</h2>
-        <p>Loyelle is opening to the first stores now. Tell us about your store and we will get you set up.</p>
-        <a class="button button-gold" href="mailto:hello@getloyelle.com?subject=Loyelle%20early%20access">Get early access</a>
-        <p class="cta-secondary">Already using Loyelle? <a href="https://app.getloyelle.com">Open the app</a></p>
+    <section class="cta-band" id="early-access">
+      <div class="container cta-grid">
+        <div>
+          <h2>Give your customers a reason to come back</h2>
+          <p>Loyelle is opening to the first stores now. Tell us about your store and we will get you set up.</p>
+          <ul class="cta-points">
+            <li>Every feature, on the free plan too</li>
+            <li>Help moving your existing points and tiers</li>
+            <li>A direct line to the people building it</li>
+          </ul>
+          <p class="cta-secondary">Already using Loyelle? <a href="https://app.getloyelle.com">Open the app</a></p>
+        </div>
+        <form class="access-form" id="access-form" novalidate>
+          <div class="field">
+            <label for="access-store">Store address <span aria-hidden="true">*</span></label>
+            <input id="access-store" name="store" type="text" inputmode="url" autocomplete="url" autocapitalize="none" spellcheck="false" placeholder="your-store.myshopify.com" required aria-describedby="access-store-error">
+            <p class="field-error" id="access-store-error" hidden>Enter your store address, for example your-store.myshopify.com.</p>
+          </div>
+          <div class="field">
+            <label for="access-email">Work email <span aria-hidden="true">*</span></label>
+            <input id="access-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@yourstore.com" required aria-describedby="access-email-error">
+            <p class="field-error" id="access-email-error" hidden>Enter an email address we can reply to.</p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="access-orders">Orders a month</label>
+              <select id="access-orders" name="orders">
+                <option value="">Choose</option>
+                <option>Under 200</option>
+                <option>200 to 500</option>
+                <option>500 to 1,000</option>
+                <option>1,000 to 2,500</option>
+                <option>Over 2,500</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="access-current">Current loyalty app</label>
+              <select id="access-current" name="current">
+                <option value="">Choose</option>
+                <option>None yet</option>
+                <option>Smile</option>
+                <option>Yotpo</option>
+                <option>LoyaltyLion</option>
+                <option>Another app</option>
+              </select>
+            </div>
+          </div>
+          <button class="button button-gold" type="submit">Request early access</button>
+          <p class="form-note" id="access-status" role="status">This opens an email to us with your details filled in.</p>
+        </form>
       </div>
     </section>
   </main>
@@ -440,7 +510,7 @@
       <div class="footer-brand">
         <span class="brand-name">Loyelle</span>
         <p>Loyalty and rewards for Shopify stores. Every feature on every plan.</p>
-        <a class="button button-gold button-small" href="mailto:hello@getloyelle.com?subject=Loyelle%20early%20access">Get early access</a>
+        <a class="button button-gold button-small" href="#early-access">Get early access</a>
       </div>
       <nav aria-label="Product">
         <h2>Product</h2>
@@ -474,6 +544,11 @@
       <p>&copy; <span id="year">2026</span> Loyelle. Shopify is a trademark of Shopify Inc. Other product names belong to their owners.</p>
     </div>
   </footer>
+
+  <div class="sticky-cta" id="sticky-cta" hidden>
+    <span>Every feature, free to start</span>
+    <a class="button button-gold button-small" href="#early-access">Get early access</a>
+  </div>
 
   <script src="site.js" defer></script>
 </body>
