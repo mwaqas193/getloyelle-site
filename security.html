@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security and data handling | Loyelle</title>
+  <meta name="description" content="How Loyelle protects data, how long it is kept and how incidents are handled.">
+  <meta name="theme-color" content="#1c1917">
+  <link rel="canonical" href="https://getloyelle.com/security.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Loyelle home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#1c1917"/><path d="M11 8v12.5a3.5 3.5 0 0 0 3.5 3.5H22" fill="none" stroke="#f5c451" stroke-width="3" stroke-linecap="round"/><circle cx="21.5" cy="11" r="2.5" fill="#f5c451"/></svg><span class="brand-name">Loyelle</span></a>
+      <nav class="legal-nav" aria-label="Policies">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="security.html" aria-current="page">Security</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="legal">
+    <div class="container legal-inner">
+      <p class="kicker">Last updated 14 November 2026</p>
+      <h1>Security and data handling</h1>
+      <p class="lede">How Loyelle protects the data merchants trust it with, how long that data is kept and what we do if something goes wrong.</p>
+
+      <h2>How Loyelle is built</h2>
+      <ul>
+        <li><strong>Inside Shopify.</strong> The app runs embedded in the Shopify admin and signs merchants in with Shopify session tokens. There are no separate Loyelle passwords.</li>
+        <li><strong>Verified messages.</strong> Every webhook from Shopify is checked against its signature before it is processed, and webhooks we send to merchants are signed.</li>
+        <li><strong>Separated stores.</strong> Every record belongs to one store, and every query is limited to that store.</li>
+        <li><strong>Encrypted in transit.</strong> All traffic to and from Loyelle uses HTTPS.</li>
+        <li><strong>Encrypted credentials.</strong> Keys for integrations a merchant connects are encrypted before they are stored, and API keys are stored only as hashes.</li>
+        <li><strong>Minimal data.</strong> We store names and emails, not phone numbers, addresses or payment details. IP addresses and device identifiers used for referral fraud checks are stored only as one-way hashes.</li>
+        <li><strong>An audit trail.</strong> Changes a merchant's team makes to points, tiers and settings are recorded with who made them.</li>
+      </ul>
+
+      <h2>Data retention</h2>
+      <p>We keep personal data only as long as it is needed to run the merchant's loyalty program.</p>
+      <ul>
+        <li>Raw copies of Shopify webhook messages are emptied automatically after 30 days.</li>
+        <li>A customer's personal data is removed when Shopify sends an erasure request or the customer is deleted in Shopify.</li>
+        <li>Store access tokens are deleted immediately on uninstall.</li>
+        <li>All personal data for a store is removed when Shopify sends the store erasure request, 48 hours after uninstall.</li>
+      </ul>
+      <p>The full table is in our <a href="privacy.html">privacy policy</a>.</p>
+
+      <h2>Access by our team</h2>
+      <ul>
+        <li>Access to production systems is limited to the people who need it to run the service.</li>
+        <li>Accounts with that access use strong, unique passwords.</li>
+        <li>Test and development work uses separate systems that hold no real customer data.</li>
+      </ul>
+
+      <h2>Security incident response</h2>
+      <p>This is the process we follow when we suspect that personal data has been accessed, lost or changed without authorisation.</p>
+      <ol>
+        <li><strong>Identify.</strong> Anyone who notices a possible incident reports it at once to the incident lead. We record when it was found and what is known.</li>
+        <li><strong>Contain.</strong> We stop the cause first: revoke the affected credentials, rotate secrets, block the route in, and take the affected part of the service offline if needed.</li>
+        <li><strong>Assess.</strong> We work out which stores and which kinds of data are affected, and how many people.</li>
+        <li><strong>Notify.</strong> We tell affected merchants without undue delay, and within 72 hours of becoming aware, with what happened, what data is involved and what we are doing. We notify Shopify as its partner rules require.</li>
+        <li><strong>Recover.</strong> We fix the weakness, restore from a clean state where needed and confirm the service is safe before bringing it back.</li>
+        <li><strong>Review.</strong> Within two weeks we write up the cause, the timeline and the changes made to prevent a repeat.</li>
+      </ol>
+
+      <h2>Report a problem</h2>
+      <p>If you believe you have found a security problem in Loyelle, write to <a href="mailto:hello@getloyelle.com?subject=Security%20report">hello@getloyelle.com</a>. We will acknowledge your report within three working days.</p>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><span class="brand-name">Loyelle</span><p>Loyalty and rewards for Shopify stores.</p></div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="security.html">Security</a>
+        <a href="mailto:hello@getloyelle.com">hello@getloyelle.com</a>
+      </nav>
+    </div>
+    <div class="container footer-legal"><p>&copy; 2026 Loyelle. Shopify is a trademark of Shopify Inc.</p></div>
+  </footer>
+</body>
+</html>
