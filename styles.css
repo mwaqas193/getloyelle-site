@@ -271,6 +271,8 @@ h1 em { font-style: italic; color: var(--gold); }
 .cta-band { background: var(--ink); color: var(--on-dark); padding: clamp(64px, 9vw, 104px) 0; position: relative; overflow: hidden; }
 .cta-band::before { content: ""; position: absolute; left: 50%; top: -60%; width: 900px; height: 600px; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(245, 196, 81, 0.2), rgba(245, 196, 81, 0)); pointer-events: none; }
 .cta-inner { position: relative; text-align: center; max-width: 720px; }
+.cta-inner .cta-secondary { margin: 20px auto 0; font-size: 0.98rem; }
+.cta-secondary a { color: var(--gold-bright); text-underline-offset: 3px; }
 .cta-inner p { margin: 18px auto 32px; color: var(--on-dark-muted); font-size: 1.1rem; max-width: 32em; }
 
 /* Footer */
